@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "774980954297",
+    "project_id": "carscheduler-a3f22",
+    "storage_bucket": "carscheduler-a3f22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774980954297:android:5fa41f6a398668867a9368",
+        "android_client_info": {
+          "package_name": "com.flutterflow.carmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774980954297-3kciddb79gslrlejumflm0d0n27futtb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.carmanager",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "774980954297-cp0vofbk8ojo2f2krjuoaidlg09s1i71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8vnSjBpkxddwb6-j-ABormUbM-W98w9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774980954297-cp0vofbk8ojo2f2krjuoaidlg09s1i71.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "774980954297-u418ngr60upo83uf5kk7dt3n46vpclsg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.carmanager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
