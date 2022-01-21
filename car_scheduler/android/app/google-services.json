@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:774980954297:android:5fa41f6a398668867a9368",
         "android_client_info": {
-          "package_name": "com.flutterflow.carmanager"
+          "package_name": "com.example.car_scheduler"
         }
       },
       "oauth_client": [
