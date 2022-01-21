@@ -5,6 +5,12 @@ import './presentation/background.dart';
 
 import './logic/check_login_data.dart';
 
+class LoginArguments {
+  final String username;
+
+  LoginArguments(this.username);
+}
+
 class Login extends StatefulWidget {
 
   @override

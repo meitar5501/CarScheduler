@@ -16,16 +16,35 @@ import './presentation/background.dart';
 import './presentation/car_location.dart';
 
 import './logic/check_login_data.dart';
+import './logic/check_car_location.dart';
 
 class CarState extends StatefulWidget {
 
-  const CarState();
+  final String username;
+
+
+  const CarState({required this.username});
 
   @override
   _CarStateState createState() => _CarStateState();
 }
 
 class _CarStateState extends State<CarState> {
+
+  bool is_here = false;
+
+  void initState() {
+    super.initState();
+    () async {
+      this.is_here = await car_is_here(widget.username);
+      setState(() {});
+    };
+  }
+
+  void _update_car_state(username) async {
+    this.is_here = await car_is_here(username);
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,8 +66,8 @@ class _CarStateState extends State<CarState> {
                 ),
               ),
               SizedBox(height: 30,),
-              CarHere(),
-              SizedBox(height: 100,),
+              this.is_here ? CarHere() : CarNotHere(),
+              SizedBox(height: 70,),
               Container(
                 height: 50,
                 width: double.infinity,
@@ -60,9 +79,26 @@ class _CarStateState extends State<CarState> {
                 child:
                   TextButton(
                     onPressed: () {
-                      print("Refreshing ");
+                      this._update_car_state(widget.username);
                     },
                     child: Text("Refresh", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                  ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: double.infinity,
+                margin: EdgeInsets.symmetric(horizontal: 50),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.orange,
+                ),
+                child:
+                  TextButton(
+                    onPressed: () {
+                      print("implement car getting");
+                    },
+                    child: Text("Take the car", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
                   ),
               ),
             ],

@@ -14,7 +14,7 @@ class CarHere extends StatelessWidget
         ),
         Center(
           child: Text(
-            'The car is Here',
+            'You have the car',
             style: TextStyle(
               fontSize: 40,
               color: Colors.black,
@@ -39,7 +39,7 @@ class CarNotHere extends StatelessWidget
         ),
         Center(
           child: Text(
-            'The car is not Here',
+            'You do not have the car!',
             style: TextStyle(
               fontSize: 40,
               color: Colors.black,
